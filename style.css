@@ -283,6 +283,23 @@ table {
 
 /* ABOUT PAGE CSS */
 
+.link {
+   color:#ffffff;
+}
+
+.link:active {
+
+   color: rgb(255, 255, 255);
+}
+
+
+.link:hover {
+
+   color:#f80b0b;
+
+}
+
+
 .AboutWrapper {
    display: flex;
    align-items: flex-start;
@@ -296,18 +313,19 @@ table {
    float:left;
    flex-direction: row;
    padding-left: 100px;
+   height: 679px;
 }
 
 .Item2{
    display:flex;
    flex-direction: column;
-   width: 375px;
+   width: 360px;
    height:auto;
 }
 .Item3{
    display:flex;
    flex-direction: column;
-   width:355px; 
+   width:360px; 
    height:auto;
 }
 
@@ -318,96 +336,47 @@ table {
    padding-right: 200px;
 }
 
-.Chud
 
 
 
 
+/*---- FOOTER CSS -----*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   /* --- Sketchy Button 4 --- */
-
-   .svg-btn {
-   position: relative;
-   margin: 8px 0px 15px 0px;
-   min-width: 250px;
-   height: 90px;
-   background: transparent;
-   border: none;
-   cursor: pointer;
-   padding: 0;
-   display: inline-flex;
-   align-items: center;
+.FooterText {
+   display: flex;
    justify-content: center;
-   }
+   color: #787070;
+   text-align: center;
 
-   /* Force the SVG to fill the button container completely */
-   .btn-svg-shape {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   }
+}
 
-   .btn-svg-shape path {
-   fill: #000000;         /* Button background color */
-   stroke: #ffffff;       /* Button border color */
-   stroke-width: 7px;       /* Thicker line for a hand-drawn vibe */
-   stroke-linejoin: round;  /* Smooths out sharp vector joints */
-   transition: all 0.3s ease;
-   }
 
-   /* Absolute text placement ensures it sits perfectly on top of the vector graphics */
-   .btn-text {
-   position: relative;
-   z-index: 2;
-   font-size: 16px;
-   font-weight: bold;
-   font-family: 'Comic Sans MS', cursive, sans-serif; /* Adds to the hand-drawn vibe */
-   color: #000000;
-   letter-spacing: 0.5px;
-   padding-bottom: 7px;
-   }
 
-   /* Hover effect: Change path color and fill */
-   .svg-btn:hover .btn-svg-shape path {
-   fill: #131313;
-   stroke: #b9b9b9;
-   }
 
-   button.svg-btn:hover {
-   transform: scale(1.03) rotate(-3deg);
-   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
       /*---- CONTACT FORM CSS -----*/
 
-body {font-family: futura, Helvetica, sans-serif; color:#ffffff ;}
+body {font-family: 'Shadows Into Light', Helvetica, sans-serif; color:#ffffff ;}
 
 * {box-sizing: border-box;}
 
@@ -460,5 +429,7 @@ p {
     color: #ffffff;
     line-height: 1.2em;
     margin: 50px 0px 100px 4px;
+    font-family: monospace;
+    font-size: medium;
 }
 
