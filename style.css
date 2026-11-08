@@ -23,7 +23,7 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-   display: block;
+   display: flex;
 }
 body {
    line-height: 1;
@@ -149,7 +149,8 @@ table {
 		}
 
 		nav li a {
-			display: block;
+			display: flex;
+         float:right;
 			padding: 20px 40px;
 			text-decoration: none;
 			color: rgb(255, 255, 255);
@@ -190,7 +191,7 @@ table {
 
 		nav .menu-icon {
 			cursor: pointer;
-			display: inline-block;
+			display: flex;
 			float: right;
 			padding: 28px 40px;
 			position: relative;
@@ -199,7 +200,8 @@ table {
 
 		nav .menu-icon .navicon {
 			background: #000;
-			display: block;
+			display: flex;
+         padding-top: 10px;
 			height: 4px;
 			position: relative;
 			transition: background .2s ease-out;
@@ -218,7 +220,7 @@ table {
 		}
 
 		nav .menu-icon .navicon:before {
-			top: 8px;
+			top: 15px;
 		}
 
 		nav .menu-icon .navicon:after {
@@ -279,193 +281,42 @@ table {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* --- Sketchy Button 1 --- */
-
-.sketch-btn {
-   padding: 14px 28px;
-   margin: 8px 0px 15px 0px;
-   min-width: 250px;
-   font-size: 16px;
-   font-weight: bold;
-   font-family: 'Shadows Into Light', 'Comic Sans', Calibri, 'Trebuchet MS', sans-serif;
-   background: transparent;
-   color: #111;
-   cursor: pointer;
-   
-   /* Thick, slightly imperfect baseline border */
-   border: 5px solid #ffffff;
-   border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
-   
-   /* Applying the custom SVG filter above */
-   filter: url(#sketchy-filter);
-   transition: transform 0.2s ease;
-   }
-
-   .sketch-btn:hover {
-   transform: scale(1.03) rotate(3deg);
-   background-color: #e2e2e2;
-   }
-
-
-
-
-   /* --- Sketchy Button 2 --- */
-
-   .shaky-pencil-btn {
-   padding: 14px 28px;
-   margin: 8px 0px 15px 0px;
-   min-width: 250px;
-   font-size: 16px;
-   font-weight: bold;
-   font-family: 'Shadows Into Light', 'Comic Sans', Calibri, 'Trebuchet MS', sans-serif;
-   background: transparent;
-   color: #111;
-   cursor: pointer;
-   
-   /* Thick, slightly imperfect baseline border */
-   border: 5px solid #ffffff;
-   border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
-   
-   /* Applying the custom SVG filter above */
-   filter: url(#shaky-pencil);
-   }
-
-   .shaky-pencil-btn:hover {
-   transform: scale(1.03) rotate(-2deg);
-   background-color: #e6e6e6;
-   }
-
-
-
-
-   /* --- Sketchy Button 3 --- */
-
-   .liquid-edge-btn {
-   padding: 14px 28px;
-   margin: 8px 0px 15px 0px;
-   min-width: 250px;
-   font-size: 16px;
-   font-weight: bold;
-   font-family: 'Shadows Into Light', 'Comic Sans', Calibri, 'Trebuchet MS', sans-serif;
-   background: transparent;
-   color: #111;
-   cursor: pointer;
-   
-   /* Thick, slightly imperfect baseline border */
-   border: 5px solid #ffffff;
-   border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
-   
-   /* Applying the custom SVG filter above */
-   filter: url(#liquid-edge);
-   }
-
-   .liquid-edge-btn:hover {
-   transform: scale(1.03) rotate(4deg);
-   background-color: #ffffff;
-   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ABOUT PAGE CSS */
 
-
-.ImageBoxRow {
-float: left;
-padding: 100px;
-display: flex ;
-flex-direction: row;
-flex-wrap: wrap;
-font-family: 'Shadows Into Light', 'Comic Sans', Calibri, 'Trebuchet MS', sans-serif;
-font-kerning: auto;
-
-}
-
-.ImageBoxColumn {
-float: left;
-padding: 100px;
-display: flex ;
-flex-direction: column;
-flex-wrap: wrap;
-font-family: 'Shadows Into Light', 'Comic Sans', Calibri, 'Trebuchet MS', sans-serif;
-font-kerning: auto;
-
-}
-
-.ImageBoxColumn img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-  height: auto;
-}
-
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .ImageBoxColumn {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .ImageBoxColumn {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
-
-
-
-.TextBox {
-   padding-left: 100px;   
+.AboutWrapper {
    display: flex;
+   align-items: flex-start;
+   padding-top: 100px;
+   gap: 2rem;
+}
+
+
+.Item1{
+   display:flex;
+   float:left;
    flex-direction: row;
-   flex-wrap: wrap;
-
-
+   padding-left: 100px;
 }
 
-.TextBox p {
-
-   display: flex;
+.Item2{
+   display:flex;
    flex-direction: column;
-   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   width: 375px;
+   height:auto;
+}
+.Item3{
+   display:flex;
+   flex-direction: column;
+   width:355px; 
+   height:auto;
 }
 
+.AboutText{
+   flex:1;
+   text-align: left;
+   flex-direction: column;
+   padding-right: 200px;
+}
 
 
 
