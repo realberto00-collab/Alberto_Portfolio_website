@@ -429,7 +429,7 @@ p {
     color: #ffffff;
     line-height: 1.2em;
     margin: 50px 0px 100px 4px;
-    font-family: monospace;
+    font-family: monospace, Arial, sans-serif;
     font-size: medium;
 }
 
