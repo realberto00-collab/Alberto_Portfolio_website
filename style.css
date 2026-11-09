@@ -149,7 +149,7 @@ table {
 		}
 
 		nav li a {
-			display: flex;
+			display: inline-flex;
          float:right;
 			padding: 20px 40px;
 			text-decoration: none;
@@ -425,6 +425,10 @@ h1{
     font-size: 3em;
 }
 
+.contact h1{
+	font-size: 50px;
+	padding-left: 30px;
+}
 p {
     color: #ffffff;
     line-height: 1.2em;
