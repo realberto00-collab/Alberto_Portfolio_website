@@ -376,6 +376,31 @@ table {
 
       /*---- CONTACT FORM CSS -----*/
 
+
+.contactButtonPadding {
+	padding-left: 100px;
+
+}
+.contactButton {
+	transition: transform 180ms ease;
+}
+
+.contactButton:hover {
+	content: url('CONTACTMEBUTTON.gif');
+	transform: scale(1.05);
+	
+}
+
+.contactButton:onclick {
+	content: url('google.com');
+	
+}
+
+
+
+
+
+
 body {font-family: 'Shadows Into Light', Helvetica, sans-serif; color:#ffffff ;}
 
 * {box-sizing: border-box;}
