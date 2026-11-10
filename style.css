@@ -377,11 +377,7 @@ table {
       /*---- CONTACT FORM CSS -----*/
 
 
-.contactButtonPadding {
-	padding-left: 200px;
-	display: flex;
-	flex-direction: row;
-}
+
 .contactButton {
 	float:left;
 	padding-left: 300px;
@@ -396,26 +392,20 @@ table {
 	
 }
 
-.AdditionalButtonPadding {
-	display: flex;
-	padding-left: 100px;
-	flex-direction: column;
-
-}
 .AdditionalButton{
-	padding-top: 20px;
 	display: flex;
-	transition: transform 180ms ease;
 	flex-direction: column;
+	transition: transform 180ms ease;
+	padding-top: 20px;
 	padding-left: 100px;
 
 }
 
 .AdditionalButton:hover {
 	display: flex;
-	content: url('TSHIRTSBUTTONGIF.gif');
-	transform: scale(1.05);
 	flex-direction: column;
+	content: url('TSHIRTSBUTTONGIF.gif');
+	transform: scale(1.55);
 	padding-left: 100px;
 	
 }
@@ -430,7 +420,7 @@ table {
 .AdditionalButton2:hover {
 	display: flex;
 	content: url('VOLUNTEERBUTTONGIF.gif');
-	transform: scale(1.05);
+	transform: scale(1.55);
 	flex-direction: column;
 	padding-left: 100px;
 	
@@ -497,4 +487,3 @@ p {
     font-family: monospace, Arial, sans-serif;
     font-size: medium;
 }
-
