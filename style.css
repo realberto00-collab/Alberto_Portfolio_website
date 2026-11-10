@@ -378,11 +378,16 @@ table {
 
 
 .contactButtonPadding {
-	padding-left: 100px;
-
+	padding-left: 200px;
+	display: flex;
+	flex-direction: row;
 }
 .contactButton {
+	float:left;
+	padding-left: 300px;
 	transition: transform 180ms ease;
+	display: flex;
+	flex-direction: row;
 }
 
 .contactButton:hover {
@@ -391,8 +396,46 @@ table {
 	
 }
 
+.AdditionalButtonPadding {
+	display: flex;
+	padding-left: 100px;
+	flex-direction: column;
 
+}
+.AdditionalButton{
+	padding-top: 20px;
+	display: flex;
+	transition: transform 180ms ease;
+	flex-direction: column;
+	padding-left: 100px;
 
+}
+
+.AdditionalButton:hover {
+	display: flex;
+	content: url('TSHIRTSBUTTONGIF.gif');
+	transform: scale(1.05);
+	flex-direction: column;
+	padding-left: 100px;
+	
+}
+
+.AdditionalButton2{
+	transition: transform 180ms ease;
+	flex-direction: column;
+	padding-left: 100px;
+	
+}
+
+.AdditionalButton2:hover {
+	display: flex;
+	content: url('VOLUNTEERBUTTONGIF.gif');
+	transform: scale(1.05);
+	flex-direction: column;
+	padding-left: 100px;
+	
+	
+}
 
 body {font-family: 'Shadows Into Light', Helvetica, sans-serif; color:#ffffff ;}
 
