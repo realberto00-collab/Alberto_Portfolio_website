@@ -487,3 +487,22 @@ p {
     font-family: monospace, Arial, sans-serif;
     font-size: medium;
 }
+
+.TSHIRTrow {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.TSHIRTcolumn {
+  flex: 50%;
+  padding: 0px 4px;
+}
+
+.TSHIRTcolumn img {
+  margin: 50px;
+  vertical-align: middle;
+  height: 600px;
+  width: 600px;
+}
