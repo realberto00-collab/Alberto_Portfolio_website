@@ -100,9 +100,6 @@ table {
 
 
 
-
-
-
 /*---- BG COLOR -----*/
 
 
@@ -521,5 +518,21 @@ p {
 
 .Instagram-column p {
 
-	padding-right: 20%;
+	padding-right: 20px;
+	
+}
+
+.Instagram-column link {
+
+	color:white
+	
+}
+
+.Instagram-column:active {
+
+	color:rgb(255, 0, 0)
+	
+}
+
+@media { width: 700
 }
