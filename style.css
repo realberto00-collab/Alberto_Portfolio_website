@@ -549,11 +549,12 @@ p {
 	.Item1 {
 		
 		height:auto;
-		
+		padding: 10px;
+		float:right;
 	}
 
 	.Item2 {
-		
+		padding-top: 10px;
 		Width: 38.75%;
 	}
 
