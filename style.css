@@ -534,5 +534,57 @@ p {
 	
 }
 
-@media { width: 700
+/* --- MEDIA QUERIES --- */
+
+@media all and (max-width: 500px) {
+
+	h1 {
+		color: red;
+	};
+}
+
+@media all and (max-width: 500px) {
+
+
+	.Item1 {
+		padding-right: 100px;
+		padding-left: 0px;
+	}
+
+	.Item2 {
+
+		Width: 80%;
+	}
+
+	.Item3 {
+
+		Width: 80%;
+	}
+
+	.AboutWrapper {
+		margin-top: 50px;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+		float: left;
+		padding-left: 100px;
+	}
+
+	.AboutText {
+		flex-direction: row;
+		display: flex;
+		float:inline-end;
+	}
+
+	.contactButton {
+		margin-left: 20;
+		flex-direction: row;
+
+	}
+
+	.AdditionalButton
+
+	.AdditionalButton2
+	
 }
