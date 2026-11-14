@@ -543,10 +543,12 @@ p {
 	};
 }
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1500px) {
 
 
 	.Item1 {
+		
+		height:auto;
 		
 	}
 
@@ -570,11 +572,6 @@ p {
 		padding-left: 100px;
 	}
 
-	.AboutText {
-		flex-direction: row;
-		display: flex;
-	
-	}
 
 	.contactButton {
 		margin-left: 20;
@@ -586,4 +583,12 @@ p {
 
 	.AdditionalButton2
 	
+	.SecondaryButtons {
+
+		width: 100px;
+		height: 100px;
+
+	}
+
+
 }
