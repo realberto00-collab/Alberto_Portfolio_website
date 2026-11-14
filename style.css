@@ -536,29 +536,28 @@ p {
 
 /* --- MEDIA QUERIES --- */
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 1200px) {
 
 	h1 {
 		color: red;
 	};
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 1200px) {
 
 
 	.Item1 {
-		padding-right: 100px;
-		padding-left: 0px;
+		
 	}
 
 	.Item2 {
-
-		Width: 80%;
+		
+		Width: 38.75%;
 	}
 
 	.Item3 {
 
-		Width: 80%;
+		Width: 38.75%;
 	}
 
 	.AboutWrapper {
@@ -574,7 +573,7 @@ p {
 	.AboutText {
 		flex-direction: row;
 		display: flex;
-		float:inline-end;
+	
 	}
 
 	.contactButton {
