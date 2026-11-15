@@ -541,8 +541,7 @@ p {
 .SecondaryButtons
 
 {
-	flex-direction: row;
-	align-content: flex-end;
+	
 }
 /* --- MEDIA QUERIES --- */
 
@@ -587,43 +586,41 @@ p {
 
 	.SecondaryButtons {
 
-		flex-direction: row;
+		float: left;
 		
 
-
-
 	}
-
-
 	.contactButton {
 		transform: scale(100%);
 		
 		flex-direction: row;
 
+		padding-left: 0%;
 	}
 
 	
 	.AdditionalButton {
 
 		
-		transform: scale(15%);
+		transform: scale(55%);
 		width: auto;
 		height: auto;
+		margin-left: -25%;
 
 	}
 
 	.AdditionalButton2 {
 	
-		transform: scale(15%);
+		transform: scale(55%);
 		width: auto;
 		height: auto;
-
+		margin-left: -25%;
 	}
 
 	.AdditionalButton:hover {
 	display: flex;
 	content: url('TSHIRTSBUTTONGIF.gif');
-	transform: scale(.17);
+	transform: scale(.65);
 	flex-direction: row;
 	padding-left: 100px;
 	}
@@ -632,7 +629,7 @@ p {
 	.AdditionalButton2:hover {
 	display: flex;
 	content: url('VOLUNTEERBUTTONGIF.gif');
-	transform: scale(.17);
+	transform: scale(.65);
 	flex-direction: row;
 	padding-left: 100px;
 	
