@@ -360,8 +360,8 @@ table {
 .VolunteerTextWrapper {
 
 
-	padding-left: 100px;
-	padding-right: 150px;
+	padding-left: 400px;
+	padding-right: 500px;
 }
 
 
@@ -574,6 +574,109 @@ p {
 
 
 
+/* GRID CSS */
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+    
+body {
+    background-color: black;
+    padding: 20px;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.grid {
+    display: block;
+    font-size: 0;
+    padding: 0;
+}
+
+/* grid section */
+.grid-section {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding: 0;
+}
+
+/*.grid-section::after {
+    display: block;
+    content: "";
+    padding-top: 100%;
+}*/
+
+@media screen and (min-width: 960px) {
+    .grid-section { width: 50%; }
+}    
+@media screen and (min-width: 1280px) {
+    .grid-section { width: 33.3333333333%; }
+}
+        
+/* grid item */
+.grid-item {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;        
+}
+.grid-item::after {
+    display: block;
+    content: "";      
+}
+
+/* 1/1 */
+.whole { width: 100%; background-color: #777; }
+.whole::after { padding-top: 100%; }      
+
+/* 1/2 */
+.half { background-color: #555; }
+
+.half.vertical { width: 50%; }
+.half.vertical::after { padding-top: 200%; }
+
+.half.horizontal { width: 100%; }
+.half.horizontal::after { padding-top: 50%; }
+
+.half.left { float: left; }
+.half.right { float: right; }
+
+/* 1/4 */
+.quarter { width: 50%; background-color: #333; }   
+.quarter::after { padding-top: 100%; }
+
+/* misc */
+div[class*="grid-item"] > span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    font: normal normal 400 32px/1 sans-serif;
+    color: rgba(0,0,0,.5);
+    border: 1px solid #111;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* --- CAROUSEL CSS --- */
@@ -632,11 +735,10 @@ p {
 }
 
 .carousel__button {
-
+  background-image: url(CURSOR.gif);
   width:10px;
   height:10px;
   display: inline-block;
-  background: rgba(255, 255, 255, 1);
   border-radius: 50%;
   margin: 0 25px;
   cursor:pointer;
@@ -644,11 +746,138 @@ p {
 }
 
 .carousel__button--selected { 
+  background-image: url(CURSOR.gif);
 
-  background: rgb(255, 0, 0);
   border-radius: 50%;
+  opacity: 10%;
 
 
+}
+
+
+.carousel_container2 {
+  display: flex;
+  padding-top: 100px;
+  margin-left: 100px;
+  float:left;
+ 
+}
+
+.carousel2 {
+  position: relative;
+  object-fit: contain;
+  width: auto;
+}
+
+.carousel__item2 img {
+  display:flex;
+  padding-left: 0px;
+  margin-left: 100px;
+  
+
+}
+
+.carousel__item2 {
+
+  width: 500px;
+  height: 700px;
+  margin-left:600px;
+  background: rgba(0, 0, 0, 0);
+  padding: 1em;
+  font-family: 'Shadows Into Light', 'Comic Sans', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  color: #ffffff;
+  display:none;
+
+}
+
+.carousel__item--selected2 {
+
+    display:block;
+}
+
+
+.carousel__nav2 {
+
+  color: aqua;
+  height: -100%;
+  width:100%;
+  padding: 30px, 0;
+  position:absolute;
+  bottom:0;
+  left: 0;
+  text-align: center;
+}
+
+.carousel__button2 {
+  background-image: url(CURSOR.gif);
+  width:10px;
+  height:10px;
+  display: inline-block;
+  
+  border-radius: 50%;
+  margin: 0 25px;
+  cursor:pointer;
+  
+}
+
+.carousel__button--selected2 { 
+  background-image: url(CURSOR.gif);
+ 
+  opacity: 10%;
+  border-radius: 50%;
+  outline: 50px rgb(255, 255, 255);
+ 
+ 
+
+
+}
+
+
+
+
+
+
+
+
+
+/* --- Volunteer Text Wrapper --- */
+
+.VolunteerTextWrapper {
+
+  display: flex;
+  align-items: center;
+  gap:3rem;
+  padding-right: 500px;
+}
+
+.VolunteerCarouselLayout {
+  display: flex;
+  align-items: left;
+  gap: 3rem;
+  padding: 100px;
+}
+
+.VolunteerCarouselLayout .carousel2 {
+  width: 500px;
+  flex: 0 0 500px;
+}
+
+.VolunteerCarouselLayout .carousel__item2 {
+  box-sizing: border-box;
+  width: 100%;
+  margin-left: 0;
+}
+
+.VolunteerCarouselLayout .carousel__item2 img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-left: 0;
+  object-fit: contain;
+
+  
 }
 
 
@@ -697,6 +926,16 @@ p {
   margin-left: -390px;
 
 }
+
+.carousel__item--selected2 img {
+  display:flex;
+
+  padding-right: 0px;
+
+  margin-right: 100em;
+
+}
+
 	.SecondaryButtons {
 
 		float: left;
