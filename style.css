@@ -592,9 +592,11 @@ p {
 }
 
 .carousel__item img {
-  float:left;
   display:flex;
+  padding-left: 0px;
+
 }
+
 .carousel__item {
 
   width: 500px;
@@ -688,8 +690,12 @@ p {
 		
 	}
 
+.carousel__item img {
+  display:flex;
+  padding-left: 0px;
+  margin-left: -390px;
 
-
+}
 	.SecondaryButtons {
 
 		float: left;
