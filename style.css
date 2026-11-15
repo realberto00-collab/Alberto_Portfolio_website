@@ -594,6 +594,7 @@ p {
 .carousel__item img {
   display:flex;
   padding-left: 0px;
+  margin-left: 100px;
 
 }
 
