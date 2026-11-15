@@ -607,7 +607,7 @@ p {
 		transform: scale(35%);
 		width: auto;
 		height: auto;
-		margin-left: -35%;
+		margin-left: -40%;
 		padding-bottom: 120px;
 
 	}
@@ -617,7 +617,7 @@ p {
 		transform: scale(35%);
 		width: auto;
 		height: auto;
-		margin-left: -35%;
+		margin-left: -40%;
 		margin-bottom: 100%;
 	}
 
@@ -628,7 +628,7 @@ p {
 	flex-direction: row;
 	padding-left: 100px;
 	
-	margin-left: -35%;
+	margin-left: -40%;
 	}
 	
 
@@ -638,7 +638,7 @@ p {
 	transform: scale(.40);
 	flex-direction: row;
 	padding-left: 100px;
-	margin-left: -35%;
+	margin-left: -40%;
 	
 	
 }
