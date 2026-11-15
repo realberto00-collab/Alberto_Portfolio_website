@@ -534,6 +534,16 @@ p {
 	
 }
 
+
+
+
+
+.SecondaryButtons
+
+{
+	flex-direction: row;
+	align-content: flex-end;
+}
 /* --- MEDIA QUERIES --- */
 
 @media all and (max-width: 1200px) {
@@ -550,17 +560,17 @@ p {
 		
 		height:auto;
 		padding: 10px;
-		float:right;
+		float:left;
 	}
 
 	.Item2 {
 		padding-top: 10px;
-		Width: 38.75%;
+		Width: 45.75%;
 	}
 
 	.Item3 {
 
-		Width: 38.75%;
+		Width: 45.65%;
 	}
 
 	.AboutWrapper {
@@ -574,19 +584,59 @@ p {
 	}
 
 
+
+	.SecondaryButtons {
+
+		flex-direction: row;
+		
+
+
+
+	}
+
+
 	.contactButton {
-		margin-left: 20;
+		transform: scale(100%);
+		
 		flex-direction: row;
 
 	}
 
 	
-	.SecondaryButtons {
+	.AdditionalButton {
 
+		
+		transform: scale(15%);
 		width: auto;
 		height: auto;
 
 	}
 
+	.AdditionalButton2 {
+	
+		transform: scale(15%);
+		width: auto;
+		height: auto;
+
+	}
+
+	.AdditionalButton:hover {
+	display: flex;
+	content: url('TSHIRTSBUTTONGIF.gif');
+	transform: scale(.17);
+	flex-direction: row;
+	padding-left: 100px;
+	}
+	
+
+	.AdditionalButton2:hover {
+	display: flex;
+	content: url('VOLUNTEERBUTTONGIF.gif');
+	transform: scale(.17);
+	flex-direction: row;
+	padding-left: 100px;
+	
+	
+}
 
 }
