@@ -27,6 +27,30 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
    line-height: 1;
+* {
+  cursor: url(CURSORframe1.png), auto;
+  -webkit-animation: cursor 400ms infinite;
+  animation: cursor 400ms infinite;
+}
+
+@-webkit-keyframes cursor {
+  0% {cursor: url(CURSORframe1.png), auto;}
+  20% {cursor: url(CURSORframe1.png), auto;}
+  40% {cursor: url(CURSORframe2.png), auto;}
+  60% {cursor: url(CURSORframe2.png), auto;}
+  80% {cursor: url(CURSORframe2.png), auto;}
+  100% {cursor: url(CURSORframe1.png), auto;}
+} 
+
+@keyframes cursor {
+  0% {cursor: url(CURSORframe1.png), auto;}
+  20% {cursor: url(CURSORframe1.png), auto;}
+  40% {cursor: url(CURSORframe2.png), auto;}
+  60% {cursor: url(CURSORframe2.png), auto;}
+  80% {cursor: url(CURSORframe2.png), auto;}
+  100% {cursor: url(CURSORframe1.png), auto;}
+}
+
 }
 ol, ul {
    list-style: none;
@@ -67,10 +91,7 @@ table {
  }
  
 
-.h33 {
-   font-size: xx-large;
-   font-family: 'Shadows Into Light', "Rock Salt", 'Comic sans';
-}
+
 
 
 
