@@ -402,7 +402,7 @@ table {
 	display: flex;
 	flex-direction: column;
 	content: url('TSHIRTSBUTTONGIF.gif');
-	transform: scale(1.55);
+	transform: scale(1.15);
 	padding-left: 100px;
 	
 }
@@ -417,7 +417,7 @@ table {
 .AdditionalButton2:hover {
 	display: flex;
 	content: url('VOLUNTEERBUTTONGIF.gif');
-	transform: scale(1.55);
+	transform: scale(1.15);
 	flex-direction: column;
 	padding-left: 100px;
 	
