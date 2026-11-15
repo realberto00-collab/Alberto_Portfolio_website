@@ -623,6 +623,7 @@ p {
 	transform: scale(.65);
 	flex-direction: row;
 	padding-left: 100px;
+	margin-left: -25%;
 	}
 	
 
@@ -632,6 +633,7 @@ p {
 	transform: scale(.65);
 	flex-direction: row;
 	padding-left: 100px;
+	margin-left: -25%;
 	
 	
 }
