@@ -605,7 +605,7 @@ p {
 		transform: scale(55%);
 		width: auto;
 		height: auto;
-		margin-left: -25%;
+		margin-left: -60%;
 
 	}
 
@@ -614,7 +614,7 @@ p {
 		transform: scale(55%);
 		width: auto;
 		height: auto;
-		margin-left: -25%;
+		margin-left: -60%;
 	}
 
 	.AdditionalButton:hover {
@@ -623,7 +623,7 @@ p {
 	transform: scale(.65);
 	flex-direction: row;
 	padding-left: 100px;
-	margin-left: -25%;
+	margin-left: -60%;
 	}
 	
 
@@ -633,7 +633,7 @@ p {
 	transform: scale(.65);
 	flex-direction: row;
 	padding-left: 100px;
-	margin-left: -25%;
+	margin-left: -60%;
 	
 	
 }
