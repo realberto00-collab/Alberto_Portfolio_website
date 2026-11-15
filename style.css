@@ -596,44 +596,46 @@ p {
 		flex-direction: row;
 
 		padding-left: 0%;
+
+		margin-left: 10%;
 	}
 
 	
 	.AdditionalButton {
 
 		
-		transform: scale(55%);
+		transform: scale(35%);
 		width: auto;
 		height: auto;
-		margin-left: -60%;
+		margin-left: -55%;
 
 	}
 
 	.AdditionalButton2 {
 	
-		transform: scale(55%);
+		transform: scale(35%);
 		width: auto;
 		height: auto;
-		margin-left: -60%;
+		margin-left: -55%;
 	}
 
 	.AdditionalButton:hover {
 	display: flex;
 	content: url('TSHIRTSBUTTONGIF.gif');
-	transform: scale(.65);
+	transform: scale(.40);
 	flex-direction: row;
 	padding-left: 100px;
-	margin-left: -60%;
+	margin-left: -55%;
 	}
 	
 
 	.AdditionalButton2:hover {
 	display: flex;
 	content: url('VOLUNTEERBUTTONGIF.gif');
-	transform: scale(.65);
+	transform: scale(.40);
 	flex-direction: row;
 	padding-left: 100px;
-	margin-left: -60%;
+	margin-left: -55%;
 	
 	
 }
