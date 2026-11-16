@@ -633,7 +633,7 @@ p {
   {
     
     display: grid;
-    grid-template-columns: 3fr 3fr 3fr 3.5fr 4.5fr 2fr 4fr;
+    grid-template-columns: 3fr 3fr 3fr 2.5fr 4.5fr 1fr 4fr 2fr;
     grid-template-rows: 250px 100px 200px;
     gap: 5em;
     grid-template-areas: 
@@ -647,6 +647,38 @@ p {
     padding: 10px;
   
     orphans: 2;
+  }
+
+
+    .grid-container6 { 
+    
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 450px 100px 100px;
+    gap: 1em;
+    grid-template-areas: 
+    " box-2 box-2 box-1 ";
+    color:#f80b0b;
+    padding: 10px;
+    orphans: 2;
+    margin: 50px;
+  }
+
+    .grid-container7 {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 3fr;
+    grid-template-rows: 1000px 200px 200px;
+    gap: 1em;
+    grid-template-areas: 
+    "box-z box-2 box-1 box-1 box-x"
+    "box-z box-y box-c box-c box-x"
+    "box-z box-y box-c box-c box-x";
+
+    color:#f80b0b;
+    padding: 10px;
+    orphans: 2;
+    padding-right: 250px;
+    
   }
 
 .grid-item {
@@ -674,7 +706,11 @@ p {
 .grid-item img:hover {
 transition: 0.5s;
  transform: scale(1.05);
- transform-origin: var(--zoom-x, 50%) var(--zoom-y, 50%);
+}
+
+.grid-container5 img:hover {
+transition: 0.5s;
+ transform: scale(1.55);
 }
 
 
@@ -712,7 +748,6 @@ transition: 0.5s;
 .carousel__item img:hover {
   transition: 0.5s;
   transform: scale(1.05);
-  transform-origin: var(--zoom-x, 50%) var(--zoom-y, 50%);
 
 }
 
@@ -796,7 +831,6 @@ transition: 0.5s;
 .carousel__item2 img:hover {
   transition: 0.5s;
   transform: scale(1.05);
-  transform-origin: var(--zoom-x, 50%) var(--zoom-y, 50%);
 
 }
 
