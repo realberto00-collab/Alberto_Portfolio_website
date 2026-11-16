@@ -634,7 +634,7 @@ p {
     
     display: grid;
     grid-template-columns: 3fr 3fr 3fr 2.5fr 4.5fr 1fr 4fr 2fr;
-    grid-template-rows: 250px 100px 200px;
+    grid-template-rows: 150px 130px 200px;
     gap: 5em;
     grid-template-areas: 
     "box-1 box-1 box-2 box-2 box-3 box-3 box-3"
