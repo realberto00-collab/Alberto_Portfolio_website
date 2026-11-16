@@ -1,3 +1,17 @@
+document.querySelectorAll(".grid-item img, .carousel__item img, .carousel__item2 img").forEach(image => {
+    image.addEventListener("pointermove", event => {
+        const x = Math.max(0, Math.min(100, (event.offsetX / image.clientWidth) * 100));
+        const y = Math.max(0, Math.min(100, (event.offsetY / image.clientHeight) * 100));
+        image.style.setProperty("--zoom-x", `${x}%`);
+        image.style.setProperty("--zoom-y", `${y}%`);
+    });
+
+    image.addEventListener("pointerleave", () => {
+        image.style.removeProperty("--zoom-x");
+        image.style.removeProperty("--zoom-y");
+    });
+});
+
 document.querySelectorAll(".carousel").forEach(carousel => {
 
     const items = carousel.querySelectorAll(".carousel__item");
