@@ -339,7 +339,7 @@ p {
 }
 
 .AboutText{
-   padding-top: 100px;
+   padding-top: 50px;
    flex:1;
    text-align: left;
    flex-direction: column;
