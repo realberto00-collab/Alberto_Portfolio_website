@@ -407,6 +407,21 @@ p {
 	
 }
 
+.contactButton2 {
+	padding-left: 300px;
+	transition: transform 180ms ease;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: row;
+}
+
+.contactButton2:hover {
+	content: url('CONTACTMEBUTTON.gif');
+	transform: scale(1.05);
+	
+}
+
 .AdditionalButton{
 	display: flex;
 	flex-direction: column;
