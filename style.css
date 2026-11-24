@@ -110,7 +110,6 @@ p {
 
 
 
-/*---- BG COLOR -----*/
 
 
 
@@ -263,7 +262,7 @@ p {
 			top: 0;
 		}
 
-		/* 48em = 768px */
+		/* MOBILE NAV BAR */
 
 		@media (min-width: 48em) {
 			nav li {
@@ -940,42 +939,17 @@ transition: 0.5s;
 
 /* --- MEDIA QUERIES --- */
 
-@media all and (max-width: 1500px) {
+
+
+/* @media all and (max-width: 1499px) {
 
 	h1 {
 		color: red;
 	};
-}
+} */ 
 
-@media all and (max-width:1500px) {
+@media all and (max-width:1499px) {
 
-
-	.Item1 {
-		
-		height:auto;
-		padding: 10px;
-		float:left;
-	}
-
-	.Item2 {
-		padding-top: 10px;
-		Width: 45.75%;
-	}
-
-	.Item3 {
-
-		Width: 45.65%;
-	}
-
-	.AboutWrapper {
-		margin-top: 50px;
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		height: 100%;
-		float: left;
-		
-	}
 
 .carousel__item img {
   display:flex;
@@ -1060,4 +1034,485 @@ transition: 0.5s;
 	
 }
 
+/* UNDER DESKTOP SIZE PAGE LAYOUT  */
+
+
+
 }
+
+@media (max-width: 1499px) {
+  nav li a {
+    padding: 18px 12px;
+    font-size: 15px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 100px clamp(1rem, 8vw, 7rem);
+  }
+
+  .container h1 {
+    padding-left: 0 !important;  
+    text-align: center;
+  }
+
+  .carousel_container,
+  .carousel_container2 {
+    display: none;
+  }
+
+  .carousel,
+  .carousel2 {
+    width: min(100%, 500px);
+    margin: 0 auto;
+    float: none;
+  }
+
+  .carousel__item,
+  .carousel__item2 {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .carousel__item img,
+  .carousel__item2 img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto !important;
+    max-height: 75vh;
+    margin: 0 auto;
+    padding: 0;
+    object-fit: contain;
+  }
+
+  .VolunteerTextWrapper {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem clamp(1rem, 5vw, 4rem);
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .VolunteerTextWrapper h1,
+  .VolunteerTextWrapper p {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .Instagram-column {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 100px 1rem 1rem;
+  }
+
+  .Instagram-column p {
+    padding-right: 0;
+  }
+}
+
+
+/* TABLET BREAK POINT */
+
+
+@media (max-width: 767px) {
+  .AboutWrapper {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .AboutWrapper > div:first-child {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .AboutWrapper .Item1 {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 0;
+    justify-self: center;
+  }
+
+  .AboutWrapper .Item2,
+  .AboutWrapper .Item3 {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    justify-self: center;
+  }
+
+  .AboutText {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .AboutButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .AboutButtons a {
+    display: flex;
+    flex: 0 1 auto;
+    justify-content: center;
+    min-width: 0;
+    width: min(100%, 360px);
+  }
+
+  .AboutButtons .contactButton,
+  .AboutButtons .AdditionalButton,
+  .AboutButtons .AdditionalButton2 {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    transform: none;
+  }
+
+  .AboutButtons .AdditionalButton:hover,
+  .AboutButtons .AdditionalButton2:hover {
+    margin: 0;
+    padding: 0;
+    transform: scale(1.05);
+  }
+
+  .contactButton {
+    float: none;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+
+  .AdditionalButton,
+  .AdditionalButton2 {
+    width: min(45vw, 300px);
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    transform: none;
+  }
+
+  .grid-container,
+  .grid-container2,
+  .grid-container3,
+  .grid-container4,
+  .grid-container5,
+  .grid-container6,
+  .grid-container7 {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: none;
+    gap: 1.5rem;
+    padding: clamp(1rem, 5vw, 4rem);
+    margin: 0 auto;
+  }
+
+  .grid-item {
+    grid-area: auto !important;
+    min-width: 0;
+    padding: 1rem;
+    font-size: clamp(1rem, 2.5vw, 2.1rem);
+  }
+
+  .grid-item img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    max-height: 75vh;
+    height: auto;
+    margin: 1rem auto;
+    object-fit: contain;
+  }
+
+  .container {
+    padding: 90px 1.25rem 3rem;
+  }
+}
+
+
+
+
+
+
+/*         MOBILE DESKTOP BREAKPOINT      */
+
+
+
+@media (min-width: 1500px) {
+  .grid-container,
+  .grid-container2,
+  .grid-container3,
+  .grid-container4,
+  .grid-container5,
+  .grid-container6,
+  .grid-container7 {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*         MOBILE NAV BREAKPOINT      */
+
+
+@media (max-width: 767px) {
+  nav {
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+  }
+
+  nav .menu-btn:checked ~ .menu {
+    max-height: calc(100vh - 60px);
+    overflow-y: auto;
+  }
+
+  nav li a {
+    display: flex;
+    float: none;
+    justify-content: center;
+    width: 100%;
+    padding: 12px 16px;
+  }
+
+  nav .menu-icon {
+    width: 64px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 20px;
+  }
+
+  nav .menu-icon .navicon {
+    display: block;
+    width: 24px;
+    height: 2px;
+    padding: 0;
+    background: #fff;
+    transition: none;
+  }
+
+  nav .menu-icon .navicon:before,
+  nav .menu-icon .navicon:after {
+    height: 2px;
+    background: #fff;
+    left: 0;
+    transition: none;
+  }
+
+  nav .menu-icon .navicon:before {
+    top: -7px;
+  }
+
+  nav .menu-icon .navicon:after {
+    top: 7px;
+  }
+
+  nav .menu-btn:checked ~ .menu-icon .navicon {
+    background: #fff;
+  }
+
+  nav .menu-btn:checked ~ .menu-icon .navicon:before,
+  nav .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: none;
+  }
+
+  nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before {
+    top: -7px;
+  }
+
+  nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 7px;
+  }
+}
+
+
+
+/* MOBILE ABOUT PAGE LAYOUTS (IMAGE WRAPPERS) */
+
+
+@media (max-width: 375px) {
+  .AboutWrapper > div:first-child {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .AboutWrapper .Item2,
+  .AboutWrapper .Item3 {
+    grid-column: 1;
+  }
+
+  nav li a {
+    padding: 10px 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1499px) {
+  .AboutWrapper > div:first-child {
+    display: grid;
+    flex: 0 1 60%;
+    grid-template-columns: minmax(0, 500fr) minmax(0, 360fr);
+    grid-template-rows: 319fr 360fr;
+    gap: 0;
+    aspect-ratio: 860 / 679;
+    width: 100%;
+    max-width: 860px;
+    min-width: 0;
+  }
+
+  .AboutWrapper .Item1 {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    float: none;
+    object-fit: contain;
+  }
+
+  .AboutWrapper .Item2,
+  .AboutWrapper .Item3 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .AboutWrapper .Item2 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .AboutWrapper .Item3 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .AboutText {
+    flex: 1 1 40%;
+    min-width: 0;
+    padding-right: clamp(0px, 10vw, 160px);
+  }
+}
+
+/* TABLET TO DESKTOP LAYOUTS (ABOUT PAGE BUTTONS) */
+
+
+
+@media (min-width: 768px) and (max-width: 1919px) {
+  .AboutButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(1rem, 3vw, 3rem);
+    width: 100%;
+    padding: 0 clamp(1rem, 3vw, 3rem);
+  }
+
+  .AboutButtons a {
+    display: flex;
+    flex: 0 1 auto;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+  }
+
+  .AboutButtons .contactButton {
+    float: none;
+    width: clamp(220px, 32vw, 420px);
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    transform: none;
+  }
+
+  .AboutButtons .AdditionalButton,
+  .AboutButtons .AdditionalButton2 {
+    display: block;
+    width: clamp(130px, 18vw, 240px);
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    transform: none;
+  }
+
+  .AboutButtons .AdditionalButton:hover,
+  .AboutButtons .AdditionalButton2:hover {
+    margin: 0;
+    padding: 0;
+    transform: scale(1.05);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*     BREAKPOINTS ARE AS FOLLOWS:
+
+
+DESKTOP: 1500 PIXELS W
+
+TABLET: 767 PIXELS W
+
+MOBILE: 375 PIXELS W
+
+
+
+
+
+
+
+
+
+
+
+*/
