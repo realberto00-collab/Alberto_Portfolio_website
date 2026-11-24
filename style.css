@@ -1490,6 +1490,41 @@ transition: 0.5s;
 
 
 
+/* --- INDEX PAGE BUTTONS: VERTICAL COLUMN --- */
+
+.IndexButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.IndexButtons a {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.IndexButtons .contactButton {
+  width: clamp(240px, 45vw, 600px);
+}
+
+.IndexButtons .AdditionalButton,
+.IndexButtons .AdditionalButton2 {
+  width: clamp(160px, 25vw, 350px);
+}
+
+.IndexButtons .contactButton:hover,
+.IndexButtons .AdditionalButton:hover,
+.IndexButtons .AdditionalButton2:hover {
+  transform: scale(1.05);
+}
+
+
+
 
 
 
