@@ -1490,7 +1490,7 @@ transition: 0.5s;
 
 
 
-/* --- INDEX PAGE BUTTONS: VERTICAL COLUMN --- */
+/* --- INDEX PAGE BUTTONS CSS ADJUSTMENTS--- */
 
 .IndexButtons {
   display: flex;
@@ -1512,14 +1512,9 @@ transition: 0.5s;
   width: clamp(240px, 45vw, 600px);
 }
 
-.IndexButtons .AdditionalButton,
-.IndexButtons .AdditionalButton2 {
-  width: clamp(160px, 25vw, 350px);
-}
 
 .IndexButtons .contactButton:hover,
-.IndexButtons .AdditionalButton:hover,
-.IndexButtons .AdditionalButton2:hover {
+ {
   transform: scale(1.05);
 }
 
