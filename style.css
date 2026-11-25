@@ -1513,6 +1513,10 @@ transition: 0.5s;
   float: none;
 }
 
+.carousel--centered {
+  margin-top: 100px;
+}
+
 .carousel--centered .carousel__item,
 .carousel2--centered .carousel__item2 {
   box-sizing: border-box;
@@ -1544,6 +1548,10 @@ transition: 0.5s;
   margin: 1rem 0 0;
   padding: 0;
   text-align: center;
+}
+
+.AboutButtons .contactButton:hover {
+  transform: scale(1.05);
 }
 
 
