@@ -1501,6 +1501,50 @@ transition: 0.5s;
   }
 }
 
+/* Keep the T-shirt and volunteer carousels centered at every viewport size. */
+.carousel--centered,
+.carousel2--centered {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(calc(100% - 2rem), 500px);
+  margin: 0 auto;
+  float: none;
+}
+
+.carousel--centered .carousel__item,
+.carousel2--centered .carousel__item2 {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel--centered .carousel__item img,
+.carousel2--centered .carousel__item2 img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto !important;
+  max-height: 75vh;
+  margin: 0 auto !important;
+  padding: 0;
+  object-fit: contain;
+}
+
+.carousel--centered .carousel__nav,
+.carousel2--centered .carousel__nav2 {
+  position: static;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  margin: 1rem 0 0;
+  padding: 0;
+  text-align: center;
+}
 
 
 
