@@ -29,14 +29,22 @@ body {
    line-height: 1;
 }
 
-* {
-  cursor: url(CURSORframe1.png), auto;
-  -webkit-animation: cursor 400ms infinite;
-  animation: cursor 400ms infinite;
+html {
+  cursor: url("CURSORframe1.png") 0 0, auto;
+  animation: cursor-frames 400ms steps(1, end) infinite;
 }
 
-*:hover {
-  cursor: url(CURSORframe2.png), auto;
+html *:not(input):not(textarea):not([contenteditable="true"]) {
+  cursor: inherit !important;
+}
+
+@keyframes cursor-frames {
+  0%, 49.99% {
+    cursor: url("CURSORframe1.png") 0 0, auto;
+  }
+  50%, 100% {
+    cursor: url("CURSORframe2.png") 0 0, auto;
+  }
 }
 
 ol, ul {
@@ -1563,26 +1571,61 @@ transition: 0.5s;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
   width: 100%;
+  min-height: 100vh;
   padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 .IndexButtons a {
   display: flex;
   justify-content: center;
+  max-width: 100%;
 }
 
-
-
-.IndexButtons .contactButton {
+.IndexButtons .AdditionalButton3 {
+  position: relative;
+  display: block;
   width: clamp(240px, 45vw, 600px);
+  max-width: 100%;
+  margin: 0;
+  transform: none;
+  transition: transform 300ms ease;
 }
 
+.IndexButtons .AdditionalButton3Image {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: opacity 300ms ease;
+}
 
-.IndexButtons .contactButton:hover,
- {
+.IndexButtons .AdditionalButton3HoverImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease;
+}
+
+.IndexButtons a:hover .AdditionalButton3,
+.IndexButtons a:focus-visible .AdditionalButton3 {
   transform: scale(1.05);
+}
+
+.IndexButtons a:hover .AdditionalButton3HoverImage,
+.IndexButtons a:focus-visible .AdditionalButton3HoverImage {
+  opacity: 1;
+}
+
+.IndexButtons a:hover .AdditionalButton3Image,
+.IndexButtons a:focus-visible .AdditionalButton3Image {
+  opacity: 0;
 }
 
 
