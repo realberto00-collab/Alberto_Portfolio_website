@@ -28,18 +28,6 @@ function setupCarousel({
         const buttons = Array.from(nav.querySelectorAll(buttonSelector));
         let selectedIndex = 0;
 
-        const previousButton = document.createElement("button");
-        previousButton.type = "button";
-        previousButton.className = "carousel__arrow carousel__arrow--previous";
-        previousButton.setAttribute("aria-label", "Previous slide");
-
-        const nextButton = document.createElement("button");
-        nextButton.type = "button";
-        nextButton.className = "carousel__arrow carousel__arrow--next";
-        nextButton.setAttribute("aria-label", "Next slide");
-
-        carousel.append(previousButton, nextButton);
-
         const selectSlide = index => {
             const normalizedIndex = (index + items.length) % items.length;
             items.forEach(item => item.classList.remove(itemSelectedClass));
@@ -49,9 +37,6 @@ function setupCarousel({
             buttons[normalizedIndex].classList.add(buttonSelectedClass);
             selectedIndex = normalizedIndex;
         };
-
-        previousButton.addEventListener("click", () => selectSlide(selectedIndex - 1));
-        nextButton.addEventListener("click", () => selectSlide(selectedIndex + 1));
 
         buttons.forEach((button, index) => {
             const activate = () => selectSlide(index);
