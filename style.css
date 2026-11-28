@@ -759,6 +759,9 @@ transition: 0.5s;
   position: relative;
   align-content: center;
   justify-content: center;
+  touch-action: pan-y;
+  user-select: none;
+  cursor: grab;
 }
 
 .carousel__item img {
@@ -840,6 +843,9 @@ transition: 0.5s;
   position: relative;
   object-fit: contain;
   width: auto;
+  touch-action: pan-y;
+  user-select: none;
+  cursor: grab;
 }
 
 .carousel__item2 img {
